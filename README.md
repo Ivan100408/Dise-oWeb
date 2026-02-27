@@ -5,193 +5,84 @@
 	  <title>Evento Real Zaragoza vs Burgos</title>
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	  <!-- Bootstrap 5 CSS (CDN) -->
-	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+# Descripción del proyecto
+El proyecto consiste en una página web estática informativa sobre un evento de animación previo al partido entre el Real Zaragoza y el Burgos CF, que se celebra en el Ibercaja Estadio (Zaragoza).
+La web tiene como objetivo informar a los aficionados sobre:
+En qué consiste el evento.
+Qué actividades se realizarán.
+Cuándo y dónde tendrá lugar.
+Facilitar una navegación clara mediante un menú superior fijo.
+Está desarrollada con HTML5 y Bootstrap 5 mediante CDN, utilizando un diseño responsive que se adapta correctamente a dispositivos móviles, tablets y ordenadores.
 
-	  <style>
-		body {
-		  padding-top: 70px;
-		}
-		#hero {
-		  background-color: #0d6efd;
-		  color: white;
-		  padding: 60px 0;
-		  text-align: center;
-		}
-		.img-evento {
-		  max-height: 260px;
-		  object-fit: cover;
-		}
-	  </style>
-	</head>
-	<body>
+# Secciones usadas y número de columnas Bootstrap
+La página utiliza el sistema de grid de Bootstrap basado en 12 columnas.
+Navbar
+Se utiliza un container para centrar el contenido.
+No se emplea el sistema de columnas directamente en esta sección.
+Hero
+Se utiliza un container con texto centrado.
+No usa row ni columnas.
+Sección "El evento"
+Se utiliza un row con dos columnas:
+col-md-6 para el texto.
+col-md-6 para la imagen.
+En pantallas medianas o superiores ocupa 6 + 6 columnas (12 en total).
+En móviles las columnas se apilan automáticamente.
+Sección "Actividades"
+Se utiliza un row con tres columnas:
+col-md-4
+col-md-4
+col-md-4
+En pantallas medianas o superiores ocupa 4 + 4 + 4 columnas (12 en total).
+En móviles las tarjetas se colocan en vertical.
+Sección "Cuándo y dónde"
+Se utiliza un row con dos columnas:
+col-md-6 para la lista informativa.
+col-md-6 para la imagen.
+Footer
+Se utiliza un container con texto centrado.
+No se emplea sistema de columnas.
 
-	  <!-- Navbar -->
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-		<div class="container">
-		  <a class="navbar-brand" href="#hero">Evento Deportivo</a>
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
+# Componentes prediseñados de Bootstrap usados
+En el proyecto se han utilizado los siguientes componentes de Bootstrap:
+Navbar (navbar, navbar-expand-lg, navbar-dark, bg-primary)
+Collapse para menú responsive (collapse navbar-collapse)
+Sistema de grid (container, row, col-md-*)
+Cards (card, card-body)
+List Group (list-group, list-group-item)
+Navbar toggler (navbar-toggler)
+Clases utilitarias de espaciado (py-4, mb-3, mt-3)
+Clases de imagen (img-fluid, rounded)
+Clase fixed-top para fijar la barra de navegación
 
-		  <div class="collapse navbar-collapse" id="mainNavbar">
-			<ul class="navbar-nav ms-auto">
-			  <li class="nav-item">
-				<a class="nav-link active" href="#hero">Inicio</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#evento">El evento</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#actividades">Actividades</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#info">Cuándo y dónde</a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </nav>
+# Descripción de los commits y mejoras implementadas
+Commit 1 – Creación de la estructura base
+Se creó el archivo HTML con la estructura básica del documento.
+Se añadió Bootstrap mediante CDN.
+Se implementó la navbar y la sección principal (hero).
+Commit 2 – Implementación del sistema de grid
+Se añadieron las secciones “El evento”, “Actividades” y “Cuándo y dónde”.
+Se organizó el contenido utilizando row y col-md-*.
+Se comprobó el correcto funcionamiento responsive.
+Commit 3 – Implementación de componentes Bootstrap
+Se añadieron tarjetas (Cards) en la sección de actividades.
+Se incorporó un List Group para organizar la información del evento.
+Se mejoró la estructura visual con clases utilitarias.
+Commit 4 – Mejora de diseño y usabilidad
+Se añadió la clase fixed-top a la navbar.
+Se ajustó el padding-top del body para evitar que el contenido quedara oculto.
+Se mejoraron los espaciados y el ajuste visual de imágenes.
+Commit 5 – Optimización final
+Se revisó el diseño en diferentes tamaños de pantalla.
+Se comprobó el funcionamiento del menú desplegable en móvil.
+Se ajustaron detalles visuales como el tamaño máximo de imágenes.
 
-	  <!-- Hero -->
-	  <section id="hero">
-		<div class="container">
-		  <h1 class="h2">Movimiento de animación Real Zaragoza</h1>
-		  <p class="mt-3 mb-1">Real Zaragoza vs Burgos CF</p>
-		  <p class="mb-1">28/02/2026 · 15:30 h</p>
-		  <p class="mb-0">Ibercaja Estadio · Zaragoza</p>
-		</div>
-	  </section>
-
-	  <!-- Sección El Evento (grid 1) -->
-	  <section id="evento" class="py-4">
-		<div class="container">
-		  <h2 class="h4 mb-3">El evento</h2>
-		  <div class="row">
-			<div class="col-md-6 mb-3">
-			  <p>
-				Este evento es un movimiento de animación para apoyar al Real Zaragoza antes del partido
-				frente al Burgos CF. Está pensado para que la afición se reúna y anime al equipo.
-			  </p>
-			  <p>
-				Una entidad local organiza esta actividad abierta al público. Pueden asistir familias,
-				amigos y cualquier aficionado zaragocista que quiera vivir la previa del partido.
-			  </p>
-			  <p class="mb-0">
-				La afición zaragocista será la protagonista: bufandas, camisetas y banderas blanquiazules
-				llenarán los alrededores del estadio para que el equipo sienta el apoyo desde antes de empezar.
-			  </p>
-			</div>
-			<div class="col-md-6 mb-3">
-			  <!-- Foto del Ibercaja Estadio -->
-			  <img 
-				src="https://statics-maker.llt-services.com/zar/images/2025/07/03/small-wp/da9d8fca-f84f-40f1-9c04-fe2c81a86d84-605.webp" 
-				alt="Ibercaja Estadio" 
-				class="img-fluid rounded img-evento">
-			  <small class="text-muted d-block mt-2">
-				Imagen ilustrativa del estadio donde se jugará el partido (Ibercaja Estadio, Zaragoza).
-			  </small>
-			</div>
-		  </div>
-		</div>
-	  </section>
-
-	  <!-- Sección Actividades (grid 2) -->
-	  <section id="actividades" class="py-4 bg-light">
-		<div class="container">
-		  <h2 class="h4 mb-3">Actividades</h2>
-		  <div class="row">
-			<div class="col-md-4 mb-3">
-			  <div class="card h-100">
-				<div class="card-body">
-				  <h3 class="h5">Música y cánticos</h3>
-				  <p class="mb-0">
-					Se pondrá música y cánticos del Real Zaragoza para animar a la afición antes de entrar al estadio.
-				  </p>
-				</div>
-			  </div>
-			</div>
-
-			<div class="col-md-4 mb-3">
-			  <div class="card h-100">
-				<div class="card-body">
-				  <h3 class="h5">Zona para familias</h3>
-				  <p class="mb-0">
-					Habrá un espacio pensado para que las familias puedan estar con los más pequeños de forma tranquila.
-				  </p>
-				</div>
-			  </div>
-			</div>
-
-			<div class="col-md-4 mb-3">
-			  <div class="card h-100">
-				<div class="card-body">
-				  <h3 class="h5">Punto de encuentro</h3>
-				  <p class="mb-0">
-					Se habilitará un punto de encuentro para peñas y grupos que quieran entrar juntos al Ibercaja Estadio.
-				  </p>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </section>
-
-	  <!-- Sección Cuándo y dónde -->
-	  <section id="info" class="py-4">
-		<div class="container">
-		  <h2 class="h4 mb-3">Cuándo y dónde</h2>
-		  <div class="row">
-			<div class="col-md-6 mb-3">
-			  <ul class="list-group mb-3">
-				<li class="list-group-item">
-				  <strong>Fecha:</strong> 28 de febrero de 2026
-				</li>
-				<li class="list-group-item">
-				  <strong>Hora:</strong> 15:30 h
-				</li>
-				<li class="list-group-item">
-				  <strong>Partido:</strong> Real Zaragoza vs Burgos CF
-				</li>
-				<li class="list-group-item">
-				  <strong>Lugar:</strong> Alrededores del Ibercaja Estadio (Zaragoza)
-				</li>
-				<li class="list-group-item">
-				  <strong>Acceso:</strong> Evento abierto al público y gratuito
-				</li>
-			  </ul>
-			  <p class="mb-0">
-				La quedada será en la entrada del estadio, donde nos concentraremos los
-				aficionados zaragocistas para vivir juntos la previa antes de acceder al partido.
-			  </p>
-			</div>
-			<div class="col-md-6 mb-3">
-			  <!-- Foto de la afición zaragocista / afición en el estadio -->
-			  <img
-				src="https://www.2playbook.com/uploads/s1/34/03/09/real-zaragoza-la-romareda-aficion-2023-2024.jpeg"
-				alt="Afición zaragocista animando"
-				class="img-fluid rounded img-evento">
-			  <small class="text-muted d-block mt-2">
-				Imagen ilustrativa de la afición animando en las gradas, similar al ambiente que se espera en el evento.
-			  </small>
-			</div>
-		  </div>
-		</div>
-	  </section>
-
-	  <!-- Footer -->
-	  <footer class="bg-primary text-white py-3">
-		<div class="container text-center">
-		  <p class="mb-1">
-			&copy; 2026 Movimiento de animación Real Zaragoza
-		  </p>
-		  <p class="mb-0">
-			Evento informativo organizado por una entidad local. Página web estática realizada con Bootstrap 5.
-		  </p>
-		</div>
-	  </footer>
-
-	  <!-- Bootstrap 5 JS (CDN) -->
-	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-	</body>
-</html>
+# Mayor dificultad encontrada y solución
+Dificultad
+Al fijar la barra de navegación con fixed-top, el contenido inicial quedaba oculto debajo de la navbar.
+Solución
+Se añadió una regla CSS en el body:
+body {
+  padding-top: 70px;
+}
+De esta forma se compensa la altura de la barra de navegación y el contenido se muestra correctamente desde el inicio.
