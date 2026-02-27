@@ -1,4 +1,9 @@
-# Dise-oWeb
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Evento Real Zaragoza vs Burgos</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 # Descripción del proyecto
 El proyecto consiste en una página web estática informativa sobre un evento de animación previo al partido entre el Real Zaragoza y el Burgos CF, que se celebra en el Ibercaja Estadio (Zaragoza).
