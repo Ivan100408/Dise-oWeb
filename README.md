@@ -43,15 +43,19 @@ Un container con texto centrado. No usa columnas.
 -Commit 1 – Estructura básica
 
 Hice el HTML vacío, metí el link de Bootstrap por CDN, puse la navbar y la parte de arriba.
+
 -Commit 2 – Grid y secciones
 
 Añadí las tres secciones principales con row y columnas.
+
 -Commit 3 – Componentes chulos
 
 Puse las cards en la sección de actividades y el list-group en la info. Añadí clases para que quedara más bonito.
+
 -Commit 4 – Arreglar la navbar fija
 
 Le puse fixed-top a la navbar y padding-top al body para que no tapara el contenido de arriba.
+
 -Commit 5 – Últimos retoques
 
 Ajusté tamaños de fotos (max-height), espaciados y detalles pequeños.
