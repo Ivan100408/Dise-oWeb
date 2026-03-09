@@ -60,9 +60,11 @@ Le puse fixed-top a la navbar y padding-top al body para que no tapara el conten
 
 Ajusté tamaños de fotos (max-height), espaciados y detalles pequeños.
 
-# Lo que más me costó y cómo lo solucioné
+# Problema encontrado
 Problema: Cuando puse la navbar fija (fixed-top), el texto del hero quedaba tapado por la barra y no se veía bien al entrar en la página.
+
 Solución: Añadí esto en el <style>:
+
 CSSbody {
   padding-top: 70px;
 }
