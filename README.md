@@ -32,23 +32,28 @@ Un container con texto centrado. No usa columnas.
 
 # Componentes de Bootstrap que he usado
 
-Navbar (con navbar-expand-lg, navbar-dark, bg-dark, fixed-top)
-Grid: container, row, col-md-*
-Cards para las actividades (card, card-body, card-title, h-100 para que queden igual de altas)
-List-group para la info del partido (list-group, list-group-item)
-Clases de espaciado: py-5, mb-4, mt-3, etc.
-Imágenes responsive: img-fluid + rounded
-Utilidades como text-center, text-muted
+-Navbar (con navbar-expand-lg, navbar-dark, bg-dark, fixed-top)
+-Grid: container, row, col-md-*
+-Cards para las actividades (card, card-body, card-title, h-100 para que queden igual de altas)
+-List-group para la info del partido (list-group, list-group-item)
+-Clases de espaciado: py-5, mb-4, mt-3, etc.
+-Imágenes responsive: img-fluid + rounded
+-Utilidades como text-center, text-muted
 
-Commit 1 – Estructura básica
+-Commit 1 – Estructura básica
+
 Hice el HTML vacío, metí el link de Bootstrap por CDN, puse la navbar y la parte de arriba.
-Commit 2 – Grid y secciones
+-Commit 2 – Grid y secciones
+
 Añadí las tres secciones principales con row y columnas.
-Commit 3 – Componentes chulos
+-Commit 3 – Componentes chulos
+
 Puse las cards en la sección de actividades y el list-group en la info. Añadí clases para que quedara más bonito.
-Commit 4 – Arreglar la navbar fija
+-Commit 4 – Arreglar la navbar fija
+
 Le puse fixed-top a la navbar y padding-top al body para que no tapara el contenido de arriba.
-Commit 5 – Últimos retoques
+-Commit 5 – Últimos retoques
+
 Ajusté tamaños de fotos (max-height), espaciados y detalles pequeños.
 
 # Lo que más me costó y cómo lo solucioné
