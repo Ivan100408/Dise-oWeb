@@ -6,13 +6,11 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 # Descripción del proyecto
-El proyecto consiste en una página web estática informativa sobre un evento de animación previo al partido entre el Real Zaragoza y el Burgos CF, que se celebra en el Ibercaja Estadio (Zaragoza).
+El proyecto consiste en una página web estática informativa sobre un evento de animación antes del partido entre el Real Zaragoza y el Burgos CF, que se celebra en el Ibercaja Estadio .
 La web tiene como objetivo informar a los aficionados sobre:
 En qué consiste el evento.
 Qué actividades se realizarán.
 Cuándo y dónde tendrá lugar.
-Facilitar una navegación clara mediante un menú superior fijo.
-Está desarrollada con HTML5 y Bootstrap 5 mediante CDN, utilizando un diseño responsive que se adapta correctamente a dispositivos móviles, tablets y ordenadores.
 
 # Secciones usadas y número de columnas Bootstrap
 La página utiliza el sistema de grid de Bootstrap basado en 12 columnas.
