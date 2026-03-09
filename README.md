@@ -8,7 +8,7 @@ Cuándo y dónde hay que ir.
 
 Cómo está organizada la página (secciones y columnas Bootstrap)
 
-Navbar (la barra de arriba):
+-Navbar (la barra de arriba):
 Tiene un container para que quede centrada. No usa columnas, solo el menú con links a las secciones.
 Solo un container con texto centrado. No tiene row ni columnas.
 Sección "Previa en la Fan Zone" (antes "El evento"):
@@ -16,18 +16,18 @@ Usa un row con dos columnas:
 col-md-6 → texto descriptivo
 col-md-6 → foto del estadio
 
-Sección "Qué vamos a hacer" (actividades):
+-Sección "Qué vamos a hacer" (actividades):
 Un row con tres columnas:
 col-md-4
 col-md-4
 col-md-4
 
-Sección "Información importante" (antes "Cuándo y dónde"):
+-Sección "Información importante" (antes "Cuándo y dónde"):
 Un row con dos columnas:
 col-md-6 → lista con los datos (fecha, hora, etc.)
 col-md-6 → foto de la afición animando
 
-Footer (el pie de página):
+-Footer (el pie de página):
 Un container con texto centrado. No usa columnas.
 
 # Componentes de Bootstrap que he usado
